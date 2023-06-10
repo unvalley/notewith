@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { invoke } from "@tauri-apps/api/tauri";
-import "./App.css";
-import { MyEditor } from "./MyEditor";
+import { EpheEditor } from "./EpheEditor";
 
 function App() {
 	const [greetMsg, setGreetMsg] = useState("");
@@ -13,8 +12,8 @@ function App() {
 	}
 
 	return (
-		<div>
-			<MyEditor />
+		<div className="bg-neutral-50 flex flex-col justify-center items-center">
+			<EpheEditor />
 		</div>
 	);
 }

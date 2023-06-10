@@ -3,7 +3,7 @@ import Typography from "@tiptap/extension-typography";
 import { EditorContent, useEditor } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 
-export const MyEditor: React.FC = () => {
+export const EpheEditor: React.FC = () => {
 	const editor = useEditor({
 		extensions: [StarterKit, Highlight, Typography],
 		editable: true,
@@ -11,7 +11,7 @@ export const MyEditor: React.FC = () => {
 		editorProps: {
 			attributes: {
 				class:
-					"prose prose-sm sm:prose-base lg:prose-lg xl:prose-2xl m-5 focus:outline-none p-4 w-screen h-screen",
+					"prose lg:prose-lg xl:prose-3xl p-8 focus:outline-none w-screen h-screen",
 			},
 		},
 		content: `<h2>Hi there! 👋</h2>
